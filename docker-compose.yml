@@ -1,0 +1,19 @@
+mongo-parse-server:
+    image: mongo
+parse-server:
+    image: yongjhih/parse-server
+    links:
+        - mongo-parse-server:mongo
+    environment:
+        - APP_ID=3Ww4eTusRqMrQN6ou8C
+        - MASTER_KEY=DgTvxGqxqnxXDhaN9gJWANJ9skffZnvadYKN9ZRM7iuzzAzyvmwpY
+        - FILE_KEY=jMwdUm9UjNpNyHU3KtucioirGn9BR3h
+    ports:
+        - 1337:1337
+parse-dashboard:
+    image: yongjhih/parse-dashboard
+    environment: 
+        - PARSE_DASHBOARD_CONFIG={"apps":[{"appId":"3Ww4eTusRqMrQN6ou8C","serverURL":"http://localhost:1337/parse","masterKey":"DgTvxGqxqnxXDhaN9gJWANJ9skffZnvadYKN9ZRM7iuzzAzyvmwpY","appName":"auth-ios-parser-app"}],"users":[{"user":"admin","pass":"admin"}]}
+        - PARSE_DASHBOARD_ALLOW_INSECURE_HTTP=1
+    ports:
+        - 4040:4040
