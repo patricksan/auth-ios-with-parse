@@ -17,5 +17,8 @@ $docker-compose up
 
 ## Site
 Running on http://localhost:4040/
+
+```
 User: admin
 Pwd: admin
+```
