@@ -1,2 +1,5 @@
 language: swift
 osx_image: xcode10.2
+xcode_workspace: AuthWithParse.xcworkspace 
+xcode_scheme: AuthWithParse
+xcode_destination: platform=iOS Simulator,OS=12.3,name=iPhone X
