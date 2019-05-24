@@ -1,8 +1,8 @@
-# Status
-[![Build Status](https://travis-ci.com/patricksan/auth-ios-with-parse.svg?branch=master)](https://travis-ci.com/patricksan/auth-ios-with-parse)
-
 # auth-ios-with-parse
 This is an example of iOS Authentication using Parse as backend.
+
+## Status
+[![Build Status](https://travis-ci.com/patricksan/auth-ios-with-parse.svg?branch=master)](https://travis-ci.com/patricksan/auth-ios-with-parse)
 
 
 ## What is Parse?
