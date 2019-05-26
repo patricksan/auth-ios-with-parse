@@ -17,13 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        let parseConfig = ParseClientConfiguration {
-            $0.applicationId = "parseAppId"
-            $0.clientKey = "parseClientKey"
-            $0.server = "parseServerUrlString"
+        let configuration = ParseClientConfiguration {
+            $0.applicationId = "3Ww4eTusRqMrQN6ou8C"
+            $0.clientKey = "DgTvxGqxqnxXDhaN9gJWANJ9skffZnvadYKN9ZRM7iuzzAzyvmwpY"
+            $0.server = "http://localhost:1337/parse"
         }
-        Parse.initialize(with: parseConfig)
-        
+        Parse.initialize(with: configuration)
         return true
     }
 
